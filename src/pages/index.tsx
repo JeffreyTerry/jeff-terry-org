@@ -1,12 +1,12 @@
 import React from 'react';
 import Home from '../components/Home';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import { ThemeProvider } from 'styled-components';
 
 const theme = {
   bgColor: '#fff',
-  bgColorSecondary: '#EFFAFD',
+  bgColorSecondary: '#F7F2ED',
+  // bgColorSecondary: '#EFFAFD', // Light blue, looks a little too flowery
   darkColor: '#111', // TODO
   primaryColor: '#2d728f', // contrast ratio 5.36
   secondaryColor: '#f49e4c', // low contrast 2.13

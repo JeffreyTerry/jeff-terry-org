@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import styled from 'styled-components';
 import Introduction from './home/Introduction';
 import RecentProjects from './home/RecentProjects';
+import Skills from './home/Skills';
 
 const HomeContainer = styled(Container)`
   margin-top: 50px;
@@ -15,6 +16,7 @@ function Home() {
     <HomeContainer fluid>
       <Introduction />
       <RecentProjects />
+      <Skills />
     </HomeContainer>
   );
 }
