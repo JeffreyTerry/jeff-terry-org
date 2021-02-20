@@ -2,7 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import styled from 'styled-components';
 import Introduction from './home/Introduction';
-import SampleWork from './home/SampleWork';
+import RecentProjects from './home/RecentProjects';
 
 const HomeContainer = styled(Container)`
   margin-top: 50px;
@@ -14,7 +14,7 @@ function Home() {
   return (
     <HomeContainer fluid>
       <Introduction />
-      <SampleWork />
+      <RecentProjects />
     </HomeContainer>
   );
 }

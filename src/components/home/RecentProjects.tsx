@@ -11,23 +11,23 @@ export const SectionHeader = styled.h2`
   margin-bottom: 60px;
 `;
 
-const SampleWorkRow = styled(Row)`
+const RecentProjectsRow = styled(Row)`
   height: 500px;
   background-color: ${(props) => props.theme.bgColorSecondary};
 `;
 
-function SampleWork() {
+function RecentProjects() {
   return (
-    <SampleWorkRow>
+    <RecentProjectsRow>
       <Col xs={{ span: 10, offset: 1 }}>
         <Row>
           <Col xs={12}>
-            <SectionHeader>Sample Work</SectionHeader>
+            <SectionHeader>Recent Projects</SectionHeader>
           </Col>
         </Row>
       </Col>
-    </SampleWorkRow>
+    </RecentProjectsRow>
   );
 }
 
-export default SampleWork;
+export default RecentProjects;
