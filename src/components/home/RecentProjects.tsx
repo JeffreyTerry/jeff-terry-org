@@ -1,8 +1,10 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import styled from 'styled-components';
+import Presly from '../images/Presly';
+import Surfy from '../images/Surfy';
+import AskMeTutoring from '../images/AskMeTutoring';
 
 export const SectionHeader = styled.h2`
   font-size: 4rem;
@@ -12,8 +14,8 @@ export const SectionHeader = styled.h2`
 `;
 
 const RecentProjectsRow = styled(Row)`
-  height: 500px;
   background-color: ${(props) => props.theme.bgColorSecondary};
+  padding-bottom: 70px;
 `;
 
 function RecentProjects() {
@@ -23,6 +25,17 @@ function RecentProjects() {
         <Row>
           <Col xs={12}>
             <SectionHeader>Recent Projects</SectionHeader>
+          </Col>
+        </Row>
+        <Row>
+          <Col xs={12} md={6} xl={4} className='mb-5'>
+            <Surfy />
+          </Col>
+          <Col xs={12} md={6} xl={4} className='mb-5'>
+            <Presly />
+          </Col>
+          <Col xs={12} md={6} xl={4} className='mb-5'>
+            <AskMeTutoring />
           </Col>
         </Row>
       </Col>
