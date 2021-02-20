@@ -15,7 +15,7 @@ export const SectionHeader = styled.h2`
 
 const RecentProjectsRow = styled(Row)`
   background-color: ${(props) => props.theme.bgColorSecondary};
-  padding-bottom: 70px;
+  padding-bottom: 60px;
 `;
 
 function RecentProjects() {
