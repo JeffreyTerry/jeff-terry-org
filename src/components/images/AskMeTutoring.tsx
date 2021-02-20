@@ -17,7 +17,7 @@ function AskMeTutoring() {
 
   return (
     <RecentProjectImage
-      projectUrl='https://askmetutoring.org'
+      projectUrl='https://askmetutoring.org/courses'
       projectName='AskMe Tutoring'
       fluid={data.file.childImageSharp.fluid}
     />

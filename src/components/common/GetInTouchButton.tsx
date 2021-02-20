@@ -10,6 +10,7 @@ const StyledButton = styled(Button)`
   padding: 0.25rem 4rem;
   color: ${(props) => props.theme.primaryColor};
   border-radius: 2rem;
+  font-family: 'Montserrat', sans-serif;
   :hover {
     color: ${(props) => props.theme.bgColor};
     background-color: ${(props) => props.theme.primaryColor};
