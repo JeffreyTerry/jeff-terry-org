@@ -4,13 +4,14 @@ import Col from 'react-bootstrap/Col';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import StarRating from './StarRating';
-import { FluidObject, GatsbyImageFluidProps } from 'gatsby-image';
+import { FluidObject } from 'gatsby-image';
 import ExpertiseItemImageIcon from './ExpertiseItemImageIcon';
 
 const ExpertiseItemCol = styled(Col)`
   display: flex;
   display: -webkit-flex;
   flex-wrap: wrap;
+  margin-bottom: 3rem;
 `;
 
 const ExpertiseItemContainer = styled.div`
@@ -34,16 +35,18 @@ function ExpertiseItem({
   logoImage,
   name,
   stars,
+  iconColor,
 }: {
   icon?: IconProp;
   logoImage?: FluidObject;
+  iconColor?: string;
   name: string;
   stars: number;
 }) {
   return (
-    <ExpertiseItemCol xs={4} md={3} xl={2}>
+    <ExpertiseItemCol xs={6} sm={4} md={3} xl={2}>
       <ExpertiseItemContainer>
-        {icon && <ExpertiseItemIcon icon={icon} />}
+        {icon && <ExpertiseItemIcon icon={icon} style={{ color: iconColor }} />}
         {logoImage && <ExpertiseItemImageIcon fluid={logoImage} name={name} />}
         <ExpertiseItemName>{name}</ExpertiseItemName>
         <StarRating stars={stars} />
