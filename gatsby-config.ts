@@ -31,4 +31,5 @@ export const plugins = [
     },
     __key: 'images',
   },
+  'gatsby-plugin-fontawesome-css',
 ];
