@@ -5,7 +5,8 @@ import Introduction from './home/Introduction';
 import RecentProjects from './home/RecentProjects';
 import Expertise from './home/Expertise';
 import Links from './home/Links';
-import Bookshelf from './home/Bookshelf';
+// import Bookshelf from './home/Bookshelf';
+import Footer from './home/Footer';
 
 const HomeContainer = styled(Container)`
   margin-top: 50px;
@@ -20,7 +21,8 @@ function Home() {
       <RecentProjects />
       <Expertise />
       <Links />
-      <Bookshelf />
+      <Footer />
+      {/* <Bookshelf /> */}
     </HomeContainer>
   );
 }
