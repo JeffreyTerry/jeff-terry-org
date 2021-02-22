@@ -77,7 +77,6 @@ const ReadMoreButton = styled.button`
   display: inline;
   text-align: center;
   text-decoration: underline;
-  font-weight: 700;
 `;
 
 function Introduction() {
