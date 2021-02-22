@@ -64,8 +64,8 @@ const CaptionViewProjectButton = styled(OutboundLink)`
   padding: 0.25rem 2.5rem;
   width: fit-content;
   font-family: 'Montserrat', sans-serif;
-  text-decoration: inherit !important;
   :hover {
+    text-decoration: inherit;
     color: ${(props) => props.theme.primaryColor};
     background-color: ${(props) => props.theme.bgColor};
   }

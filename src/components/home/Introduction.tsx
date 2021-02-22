@@ -14,15 +14,32 @@ const IntroductionRow = styled(Row)`
 `;
 
 const Name = styled.h1`
-  font-size: 5rem;
+  font-size: 3rem;
   margin-bottom: 10px;
+
+  @media (min-width: 576px) {
+    font-size: 4rem;
+  }
+  @media (min-width: 768px) {
+    font-size: 5rem;
+  }
+  @media (min-width: 992px) {
+    font-size: 4rem;
+  }
+  @media (min-width: 1200px) {
+    font-size: 5rem;
+  }
 `;
 
 const JobTitle = styled.h3`
   font-size: 1.5rem;
   line-height: 2.5rem;
   font-weight: bold;
-  margin-bottom: 0px;
+  margin-bottom: 0;
+  margin-top: 1rem;
+  @media (min-width: 576px) {
+    margin-top: 0;
+  }
 `;
 
 const FastFactsRow = styled(Row)`
@@ -41,6 +58,11 @@ const FastFact = styled.h3`
 const BiographyCol = styled(Col)`
   cursor: default;
   text-align: center;
+  margin-top: 2rem;
+
+  @media (min-width: 992px) {
+    margin-top: 0;
+  }
 `;
 
 const BiographyParagraph = styled.p`
@@ -68,11 +90,23 @@ function Introduction() {
           <Row>
             <Col xs={12} lg={8}>
               <Row className='align-items-center'>
-                <Col xs={4} lg={3}>
+                <Col xs={4} md={3} lg={4} xl={3}>
                   <Headshot />
                 </Col>
-                <Col xs={8} lg={9}>
+                <Col xs={8} md={9} lg={8} xl={9}>
                   <Name>Jeff Terry</Name>
+                  {/* Only show on larger screens */}
+                  <JobTitle className='d-none d-sm-block'>
+                    <span className='mr-3'>Software Engineer in</span>
+                    <NoWrap>
+                      <FontAwesomeIcon icon={faMapMarkerAlt} className='mr-2' />
+                      <span>Oklahoma City</span>
+                    </NoWrap>
+                  </JobTitle>
+                </Col>
+
+                {/* Hide on larger screens */}
+                <Col xs={12} className='d-sm-none text-center'>
                   <JobTitle>
                     <span className='mr-3'>Software Engineer in</span>
                     <NoWrap>
@@ -98,7 +132,8 @@ function Introduction() {
                 </FastFactCol>
               </FastFactsRow>
 
-              <Row>
+              {/* Show only on large screens */}
+              <Row className='d-none d-lg-flex'>
                 <Col xs={12} className='text-center mt-5'>
                   <GetInTouchButton />
                 </Col>
@@ -151,6 +186,13 @@ function Introduction() {
                 Read {readMore ? 'less' : 'more'}
               </ReadMoreButton>
             </BiographyCol>
+          </Row>
+
+          {/* Hide on large screens */}
+          <Row className='d-lg-none'>
+            <Col xs={12} className='text-center mt-5'>
+              <GetInTouchButton />
+            </Col>
           </Row>
         </Col>
       </IntroductionRow>

@@ -17,8 +17,15 @@ const LinksRow = styled(Row)`
 `;
 
 const LinkCol = styled(Col)`
-  margin-bottom: 3rem;
   text-align: center;
+  margin-bottom: 2.5rem;
+
+  @media (min-width: 768px) {
+    margin-bottom: 2.75rem;
+  }
+  @media (min-width: 1200px) {
+    margin-bottom: 3rem;
+  }
 `;
 
 const LinkItem = styled.h3`
