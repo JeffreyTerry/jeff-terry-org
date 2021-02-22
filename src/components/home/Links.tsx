@@ -6,7 +6,7 @@ import { SectionHeader } from '../styled/components';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
 import { Link } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFileAlt } from '@fortawesome/free-regular-svg-icons';
+import { faEnvelope, faFileAlt } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faGoodreads, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { NoWrap } from '../styled/components';
 import GetInTouchButton from '../common/GetInTouchButton';
@@ -30,8 +30,8 @@ const LinkItem = styled.h3`
 `;
 
 const EmailCol = styled(Col)`
-  margin-top: 0.75rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
   font-size: 2.75rem;
 `;
 
@@ -99,7 +99,12 @@ function Links() {
           </Col>
         </Row>
         <Row className='text-center'>
-          <EmailCol xs={12}>Email</EmailCol>
+          <EmailCol xs={12}>
+            <NoWrap>
+              <FontAwesomeIcon icon={faEnvelope} className='mr-3' />
+              Email
+            </NoWrap>
+          </EmailCol>
           <Col xs={12}>
             <GetInTouchButton />
           </Col>
