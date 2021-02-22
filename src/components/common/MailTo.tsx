@@ -18,7 +18,7 @@ export const createMailToLink = (emailUser: string, emailHost: string, headers?:
 interface MailToOptions {
   emailUser: string;
   emailHost: string;
-  children: ReactChild | ReactChild[];
+  children: any;
   headers?: object;
   obfuscate?: boolean;
 }

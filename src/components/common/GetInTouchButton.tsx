@@ -1,3 +1,5 @@
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import styled from 'styled-components';
 import MailTo from './MailTo';
@@ -19,9 +21,10 @@ const StyledMailTo = styled(MailTo)`
   }
 `;
 
-function GetInTouchButton() {
+function GetInTouchButton({ icon = true }) {
   return (
     <StyledMailTo emailUser='jterry94' emailHost='gmail.com'>
+      {icon && <FontAwesomeIcon icon={faEnvelope} className='mr-3' />}
       Get in touch
     </StyledMailTo>
   );
