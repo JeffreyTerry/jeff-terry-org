@@ -7,10 +7,7 @@ import styled from 'styled-components';
 import Headshot from '../images/Headshot';
 import GetInTouchButton from '../common/GetInTouchButton';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
-
-const NoWrap = styled.span`
-  white-space: nowrap;
-`;
+import { NoWrap } from '../styled/components';
 
 const IntroductionRow = styled(Row)`
   padding-bottom: 70px;

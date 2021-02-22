@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import Introduction from './home/Introduction';
 import RecentProjects from './home/RecentProjects';
 import Expertise from './home/Expertise';
+import Links from './home/Links';
+import Bookshelf from './home/Bookshelf';
 
 const HomeContainer = styled(Container)`
   margin-top: 50px;
@@ -17,6 +19,8 @@ function Home() {
       <Introduction />
       <RecentProjects />
       <Expertise />
+      <Links />
+      <Bookshelf />
     </HomeContainer>
   );
 }
