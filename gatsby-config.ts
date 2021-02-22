@@ -32,4 +32,12 @@ export const plugins = [
     __key: 'images',
   },
   'gatsby-plugin-fontawesome-css',
+  {
+    resolve: 'gatsby-plugin-web-font-loader',
+    options: {
+      google: {
+        families: ['Montserrat:500,700', 'Mulish:400,700'],
+      },
+    },
+  },
 ];
