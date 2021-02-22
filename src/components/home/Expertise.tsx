@@ -27,7 +27,14 @@ const OutroCol = styled(Col)`
 `;
 
 const OutroText = styled.h3`
-  font-size: 2.25rem;
+  font-size: 1.75rem;
+
+  @media (min-width: 768px) {
+    font-size: 1.85rem;
+  }
+  @media (min-width: 992px) {
+    font-size: 2.25rem;
+  }
 `;
 
 function Expertise() {

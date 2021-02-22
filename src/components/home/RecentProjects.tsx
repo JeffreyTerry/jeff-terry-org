@@ -9,7 +9,22 @@ import { SectionHeader } from '../styled/components';
 
 const RecentProjectsRow = styled(Row)`
   background-color: ${(props) => props.theme.bgColorSecondary};
-  padding-bottom: 60px;
+  padding-bottom: 2rem;
+
+  @media (min-width: 992px) {
+    padding-bottom: 2.5rem;
+  }
+  @media (min-width: 1200px) {
+    padding-bottom: 3.5rem;
+  }
+`;
+
+const ProjectCol = styled(Col)`
+  margin-bottom: 2.5rem;
+
+  @media (min-width: 576px) {
+    margin-bottom: 3rem;
+  }
 `;
 
 function RecentProjects() {
@@ -22,15 +37,15 @@ function RecentProjects() {
           </Col>
         </Row>
         <Row>
-          <Col xs={12} md={6} xl={4} className='mb-5'>
+          <ProjectCol xs={12} md={6} xl={4}>
             <Surfy />
-          </Col>
-          <Col xs={12} md={6} xl={4} className='mb-5'>
+          </ProjectCol>
+          <ProjectCol xs={12} md={6} xl={4}>
             <Presly />
-          </Col>
-          <Col xs={12} md={6} xl={4} className='mb-5'>
+          </ProjectCol>
+          <ProjectCol xs={12} md={6} xl={4}>
             <AskMeTutoring />
-          </Col>
+          </ProjectCol>
         </Row>
       </Col>
     </RecentProjectsRow>
