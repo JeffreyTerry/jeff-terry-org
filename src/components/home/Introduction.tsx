@@ -141,44 +141,36 @@ function Introduction() {
             </Col>
             <BiographyCol xs={12} lg={4} onClick={() => setReadMore(!readMore)}>
               <BiographyParagraph>
-                <strong>
-                  Hi, I’m Jeff, a software engineer currently based in Oklahoma. My professional
-                  background is primarily in full-stack web development, but I’ve also done work in
-                  a bunch of other areas—from robotics, to enterprise software, to data analytics.
-                  I’m obsessed with building software that improves people’s lives, and I’m always
-                  excited to learn whatever languages and technologies I need to make that happen!
-                </strong>
+                Hi, I’m Jeff, a software engineer currently based in Oklahoma. My professional
+                background is primarily in full-stack web development, but I’ve also done work in a
+                bunch of other areas—from robotics, to enterprise software, to data analytics. I’m
+                obsessed with building software that improves people’s lives, and I’m always excited
+                to learn whatever languages and technologies I need to make that happen!
               </BiographyParagraph>
               <BiographyParagraph>
-                <strong>
-                  Right now, I’m working part-time as the lead software engineer for a small
-                  education non-profit called AskMe Tutoring. At AskMe, I’m working together with a
-                  junior engineer to build a web application that helps students find and register
-                  for online group classes. Once we finish the full build-out of AskMe’s platform
-                  this summer, I’m planning to start my next full-time adventure in July.
-                </strong>
+                Right now, I’m working part-time as the lead software engineer for a small education
+                non-profit called AskMe Tutoring. At AskMe, I’m working together with a junior
+                engineer to build a web application that helps students find and register for online
+                group classes. Once we finish the full build-out of AskMe’s platform this summer,
+                I’m planning to start my next full-time adventure in July.
               </BiographyParagraph>
               {readMore && (
                 <>
                   <BiographyParagraph>
-                    <strong>
-                      Previously, I’ve worked as a software engineering intern for Microsoft and
-                      National Instruments, and more recently, I’ve worked as a writing tutor and a
-                      rhetoric instructor at the university level. As part of my graduate studies at
-                      The Ohio State University, I not only got to read great works of literature,
-                      but I also got to study digital media and software usability with a couple of
-                      awesome professors. Last year, my graduate work culminated in{' '}
-                      <OutboundLink href='https://presly.org'>Presly</OutboundLink>, an online
-                      presentation coach that teaches students how to give great presentations.
-                    </strong>
+                    Previously, I’ve worked as a software engineering intern for Microsoft and
+                    National Instruments, and more recently, I’ve worked as a writing tutor and a
+                    rhetoric instructor at the university level. As part of my graduate studies at
+                    The Ohio State University, I not only got to read great works of literature, but
+                    I also got to study digital media and software usability with a couple of
+                    awesome professors. Last year, my graduate work culminated in{' '}
+                    <OutboundLink href='https://presly.org'>Presly</OutboundLink>, an online
+                    presentation coach that teaches students how to give great presentations.
                   </BiographyParagraph>
                   <BiographyParagraph>
-                    <strong>
-                      For my next adventure, I’m looking to work for a company that’s as obsessed
-                      with improving people’s lives as I am. I’m particularly interested in working
-                      with teammates who enjoy using cutting-edge technologies to write clean,
-                      efficient, and reliable code. Scroll down to see a few of my recent projects!
-                    </strong>
+                    For my next adventure, I’m looking to work for a company that’s as obsessed with
+                    improving people’s lives as I am. I’m particularly interested in working with
+                    teammates who enjoy using cutting-edge technologies to write clean, efficient,
+                    and reliable code. Scroll down to see a few of my recent projects!
                   </BiographyParagraph>
                 </>
               )}
