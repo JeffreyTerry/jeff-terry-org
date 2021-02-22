@@ -1,6 +1,6 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import RecentProjectImage from '../common/RecentProjectImage';
+import RecentProjectImage from '../home/recent-projects/RecentProjectImage';
 
 function AskMeTutoring() {
   const data = useStaticQuery(graphql`

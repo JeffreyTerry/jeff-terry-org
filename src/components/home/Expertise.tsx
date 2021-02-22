@@ -2,7 +2,7 @@ import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import styled from 'styled-components';
-import ExpertiseItem from '../common/ExpertiseItem';
+import ExpertiseItem from './expertise/ExpertiseItem';
 import { SectionHeader } from './RecentProjects';
 import {
   faAws,
@@ -19,8 +19,15 @@ import {
 import { graphql, useStaticQuery } from 'gatsby';
 
 const ExpertiseRow = styled(Row)`
-  padding-bottom: 270px;
-  /* padding-bottom: 70px; */
+  padding-bottom: 70px;
+`;
+
+const OutroCol = styled(Col)`
+  text-align: center;
+`;
+
+const OutroText = styled.h3`
+  font-size: 2.25rem;
 `;
 
 function Expertise() {
@@ -224,6 +231,11 @@ function Expertise() {
               name='Scheme'
               stars={1}
             />
+          </Row>
+          <Row>
+            <OutroCol xs={12}>
+              <OutroText>...and I'm always excited to learn new stuff!</OutroText>
+            </OutroCol>
           </Row>
         </Col>
       </ExpertiseRow>
