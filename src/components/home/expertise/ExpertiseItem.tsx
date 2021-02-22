@@ -20,8 +20,11 @@ const ExpertiseItemContainer = styled.div`
 `;
 
 const ExpertiseItemIcon = styled(FontAwesomeIcon)`
-  /* TODO add breakpoints */
-  font-size: 7.25vw;
+  /* The &&& makes this selector more specific so that it overrides 
+  FontAwesome's default styling */
+  &&& {
+    font-size: 7.25vw;
+  }
   margin-bottom: 0.4rem;
 `;
 
