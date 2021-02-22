@@ -1,7 +1,8 @@
 import React from 'react';
 import Home from '../components/Home';
-import './index.css';
 import { ThemeProvider } from 'styled-components';
+import { Helmet } from 'react-helmet';
+import './index.css';
 
 const theme = {
   bgColor: '#fff',
@@ -18,7 +19,9 @@ const theme = {
 function IndexPage() {
   return (
     <main>
-      <title>Jeff Terry</title>
+      <Helmet>
+        <title>Jeff Terry</title>
+      </Helmet>
       <ThemeProvider theme={theme}>
         <Home />
       </ThemeProvider>
