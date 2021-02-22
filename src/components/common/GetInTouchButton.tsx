@@ -14,6 +14,7 @@ const StyledMailTo = styled(MailTo)`
   color: ${(props) => props.theme.primaryColor};
   border-radius: 2rem;
   font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
   :hover {
     text-decoration: inherit;
     color: ${(props) => props.theme.bgColor};
@@ -24,7 +25,7 @@ const StyledMailTo = styled(MailTo)`
 function GetInTouchButton({ icon = true }) {
   return (
     <StyledMailTo emailUser='jterry94' emailHost='gmail.com'>
-      {icon && <FontAwesomeIcon icon={faEnvelope} className='mr-3' />}
+      {icon && <FontAwesomeIcon icon={faEnvelope} className='me-3' />}
       Get in touch
     </StyledMailTo>
   );

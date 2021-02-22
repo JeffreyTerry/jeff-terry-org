@@ -96,9 +96,9 @@ function Introduction() {
                   <Name>Jeff Terry</Name>
                   {/* Only show on larger screens */}
                   <JobTitle className='d-none d-sm-block'>
-                    <span className='mr-3'>Software Engineer in</span>
+                    <span className='me-3'>Software Engineer in</span>
                     <NoWrap>
-                      <FontAwesomeIcon icon={faMapMarkerAlt} className='mr-2' />
+                      <FontAwesomeIcon icon={faMapMarkerAlt} className='me-2' />
                       <span>Oklahoma City</span>
                     </NoWrap>
                   </JobTitle>
@@ -107,9 +107,9 @@ function Introduction() {
                 {/* Hide on larger screens */}
                 <Col xs={12} className='d-sm-none text-center'>
                   <JobTitle>
-                    <span className='mr-3'>Software Engineer in</span>
+                    <span className='me-3'>Software Engineer in</span>
                     <NoWrap>
-                      <FontAwesomeIcon icon={faMapMarkerAlt} className='mr-2' />
+                      <FontAwesomeIcon icon={faMapMarkerAlt} className='me-2' />
                       <span>Oklahoma City</span>
                     </NoWrap>
                   </JobTitle>

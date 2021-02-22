@@ -29,6 +29,13 @@ const LinkCol = styled(Col)`
   @media (min-width: 1200px) {
     margin-bottom: 3rem;
   }
+
+  a {
+    text-decoration: none;
+    :hover {
+      text-decoration: underline;
+    }
+  }
 `;
 
 const LinkItem = styled.h3`
@@ -61,7 +68,7 @@ function Links() {
                 <Link to='/resume' style={{ color: '#009D49' }}>
                   <LinkItem>
                     <NoWrap>
-                      <FontAwesomeIcon icon={faFileAlt} className='mr-3' />
+                      <FontAwesomeIcon icon={faFileAlt} className='me-3' />
                       Resume
                     </NoWrap>
                   </LinkItem>
@@ -71,7 +78,7 @@ function Links() {
                 <OutboundLink href='https://github.com/JeffreyTerry' style={{ color: '#171515' }}>
                   <LinkItem>
                     <NoWrap>
-                      <FontAwesomeIcon icon={faGithub} className='mr-3' />
+                      <FontAwesomeIcon icon={faGithub} className='me-3' />
                       Github
                     </NoWrap>
                   </LinkItem>
@@ -84,7 +91,7 @@ function Links() {
                 >
                   <LinkItem>
                     <NoWrap>
-                      <FontAwesomeIcon icon={faLinkedin} className='mr-3' />
+                      <FontAwesomeIcon icon={faLinkedin} className='me-3' />
                       LinkedIn
                     </NoWrap>
                   </LinkItem>
@@ -97,7 +104,7 @@ function Links() {
                 >
                   <LinkItem>
                     <NoWrap>
-                      <FontAwesomeIcon icon={faGoodreads} className='mr-3' />
+                      <FontAwesomeIcon icon={faGoodreads} className='me-3' />
                       Goodreads
                     </NoWrap>
                   </LinkItem>
