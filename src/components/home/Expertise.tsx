@@ -3,7 +3,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import styled from 'styled-components';
 import ExpertiseItem from './expertise/ExpertiseItem';
-import { SectionHeader } from './RecentProjects';
+import { SectionHeader } from '../styled/components';
 import {
   faAws,
   faBootstrap,
