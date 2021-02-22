@@ -1,5 +1,8 @@
 export const siteMetadata = {
   title: 'JeffTerry.org',
+  description: "Jeff Terry's personal website.",
+  author: 'Jeffrey Terry',
+  siteUrl: 'https://jeffterry.org',
 };
 
 export const plugins = [
