@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col';
 import styled from 'styled-components';
 import { SectionHeader } from '../styled/components';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
-import { Link } from 'gatsby';
+import { withPrefix } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileAlt } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faGoodreads, faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -65,14 +65,14 @@ function Links() {
               <LinkCol xs={12} md={6} xl={3}>
                 {/* <Link to='/resume' style={{ color: '#007A39' }}> */}
                 {/* <Link to='/resume' style={{ color: '#148F46' }}> */}
-                <Link to='/resume' style={{ color: '#009D49' }}>
+                <a href={withPrefix('./JeffTerryResume.pdf')} style={{ color: '#009D49' }}>
                   <LinkItem>
                     <NoWrap>
                       <FontAwesomeIcon icon={faFileAlt} className='me-3' />
                       Resume
                     </NoWrap>
                   </LinkItem>
-                </Link>
+                </a>
               </LinkCol>
               <LinkCol xs={12} md={6} xl={3}>
                 <OutboundLink href='https://github.com/JeffreyTerry' style={{ color: '#171515' }}>
