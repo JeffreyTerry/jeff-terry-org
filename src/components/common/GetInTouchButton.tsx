@@ -12,13 +12,26 @@ const StyledMailTo = styled(MailTo)`
   padding: 0.25rem 4rem;
   display: inline-block;
   color: ${(props) => props.theme.primaryColor};
-  border-radius: 2rem;
+  border-radius: 4rem;
   font-family: 'Montserrat', sans-serif;
   text-decoration: none;
   :hover {
     text-decoration: inherit;
     color: ${(props) => props.theme.bgColor};
     background-color: ${(props) => props.theme.primaryColor};
+  }
+
+  @media (min-width: 1600px) {
+    font-size: 1.75rem;
+  }
+  @media (min-width: 2000px) {
+    font-size: 2rem;
+  }
+  @media (min-width: 2800px) {
+    font-size: 2.25rem;
+  }
+  @media (min-width: 3800px) {
+    font-size: 2.5rem;
   }
 `;
 

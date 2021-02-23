@@ -28,4 +28,16 @@ export const SectionHeader = styled.h2`
     margin-bottom: 3.75rem;
     margin-left: 4rem;
   }
+  @media (min-width: 1600px) {
+    font-size: 4.25rem;
+  }
+  @media (min-width: 2000px) {
+    font-size: 4.5rem;
+  }
+  @media (min-width: 2800px) {
+    font-size: 4.75rem;
+  }
+  @media (min-width: 3800px) {
+    font-size: 5rem;
+  }
 `;
