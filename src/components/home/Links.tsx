@@ -53,7 +53,7 @@ const LinkItem = styled.h3`
 function Links() {
   return (
     <LinksRow>
-      <Col xs={{ span: 10, offset: 1 }}>
+      <Col xs={{ span: 10, offset: 1 }} className='col-3k-8 offset-3k-2 col-4k-6 offset-4k-3'>
         <Row>
           <Col xs={12}>
             <SectionHeader>Links</SectionHeader>

@@ -2,9 +2,8 @@ import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import styled from 'styled-components';
-import { faEnvelope, faHeart } from '@fortawesome/free-solid-svg-icons';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { NoWrap } from '../styled/components';
 import GetInTouchButton from '../common/GetInTouchButton';
 
 const FooterRow = styled(Row)`
@@ -26,7 +25,7 @@ const GetInTouchButtonRow = styled(Col)`
 function Footer() {
   return (
     <FooterRow>
-      <Col xs={{ span: 10, offset: 1 }}>
+      <Col xs={{ span: 10, offset: 1 }} className='col-3k-8 offset-3k-2 col-4k-6 offset-4k-3'>
         <GetInTouchButtonRow className='text-center'>
           <Col xs={12}>
             <GetInTouchButton />

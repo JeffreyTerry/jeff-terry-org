@@ -29,6 +29,12 @@ const Name = styled.h1`
   @media (min-width: 1200px) {
     font-size: 5rem;
   }
+  @media (min-width: 1600px) {
+    font-size: 6rem;
+  }
+  @media (min-width: 1800px) {
+    font-size: 7rem;
+  }
 `;
 
 const JobTitle = styled.h3`
@@ -39,6 +45,12 @@ const JobTitle = styled.h3`
   margin-top: 1rem;
   @media (min-width: 576px) {
     margin-top: 0;
+  }
+  @media (min-width: 1600px) {
+    font-size: 1.75rem;
+  }
+  @media (min-width: 1800px) {
+    font-size: 1.85rem;
   }
 `;
 
@@ -53,6 +65,12 @@ const FastFactCol = styled(Col)`
 const FastFact = styled.h3`
   font-size: 1.75rem;
   font-weight: 500;
+  @media (min-width: 1600px) {
+    font-size: 1.9rem;
+  }
+  @media (min-width: 1800px) {
+    font-size: 2rem;
+  }
 `;
 
 const BiographyCol = styled(Col)`
@@ -62,6 +80,29 @@ const BiographyCol = styled(Col)`
 
   @media (min-width: 992px) {
     margin-top: 0;
+  }
+  @media (min-width: 1600px) {
+    font-size: 1.15rem;
+  }
+  @media (min-width: 1800px) {
+    font-size: 1.25rem;
+  }
+  @media (min-width: 2000px) {
+    font-size: 1.375rem;
+  }
+  @media (min-width: 2200px) {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+  }
+  @media (min-width: 2800px) {
+    margin-top: 0;
+    font-size: 1.75rem;
+  }
+  @media (min-width: 3400px) {
+    margin-top: 1.5rem;
+  }
+  @media (min-width: 3800px) {
+    font-size: 2rem;
   }
 `;
 
@@ -85,9 +126,9 @@ function Introduction() {
   return (
     <>
       <IntroductionRow>
-        <Col xs={{ span: 10, offset: 1 }}>
+        <Col xs={{ span: 10, offset: 1 }} className='col-3k-8 offset-3k-2 col-4k-6 offset-4k-3'>
           <Row>
-            <Col xs={12} lg={8}>
+            <Col xs={12} lg={8} className='col-2k-7 col-3k-6 col-4k-5'>
               <Row className='align-items-center'>
                 <Col xs={4} md={3} lg={4} xl={3}>
                   <Headshot />
@@ -138,7 +179,12 @@ function Introduction() {
                 </Col>
               </Row>
             </Col>
-            <BiographyCol xs={12} lg={4} onClick={() => setReadMore(!readMore)}>
+            <BiographyCol
+              xs={12}
+              lg={4}
+              className='col-2k-5 col-3k-6 col-4k-7'
+              onClick={() => setReadMore(!readMore)}
+            >
               <BiographyParagraph>
                 Hi, I’m Jeff, a software engineer currently based in Oklahoma. My professional
                 background is primarily in full-stack web development, but I’ve also done work in a
