@@ -5,8 +5,6 @@
     "module": "commonjs",
     "lib": ["dom", "es2020"],
     "jsx": "react",
-    "declaration": true,
-    "outDir": "lib",
     "strict": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
