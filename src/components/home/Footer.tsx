@@ -29,7 +29,7 @@ const GetInTouchButtonRow = styled(Col)`
 function Footer() {
   return (
     <FooterRow>
-      <Col xs={{ span: 10, offset: 1 }} className='col-3k-8 offset-3k-2 col-4k-6 offset-4k-3'>
+      <Col xs={12} className='col-3k-8 offset-3k-2 col-4k-6 offset-4k-3'>
         <GetInTouchButtonRow className='text-center'>
           <Col xs={12}>
             <GetInTouchButton />

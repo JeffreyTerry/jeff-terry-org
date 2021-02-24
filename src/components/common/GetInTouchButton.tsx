@@ -9,7 +9,7 @@ const StyledMailTo = styled(MailTo)`
   text-align: center;
   font-size: 1.25rem;
   border: 2px solid ${(props) => props.theme.primaryColor};
-  padding: 0.25rem 4rem;
+  padding: 0.25rem 2rem;
   display: inline-block;
   color: ${(props) => props.theme.primaryColor};
   border-radius: 4rem;
@@ -23,6 +23,7 @@ const StyledMailTo = styled(MailTo)`
 
   @media (min-width: 576px) {
     font-size: 1.5rem;
+    padding: 0.25rem 4rem;
   }
   @media (min-width: 1600px) {
     font-size: 1.75rem;
@@ -41,8 +42,8 @@ const StyledMailTo = styled(MailTo)`
 function GetInTouchButton({ icon = true }) {
   return (
     <StyledMailTo emailUser='jterry94' emailHost='gmail.com'>
-      {icon && <FontAwesomeIcon icon={faEnvelope} className='me-3 d-none d-sm-inline' />}
-      Get in touch
+      {icon && <FontAwesomeIcon icon={faEnvelope} className='me-3' />}
+      Get&nbsp;in&nbsp;touch
     </StyledMailTo>
   );
 }
