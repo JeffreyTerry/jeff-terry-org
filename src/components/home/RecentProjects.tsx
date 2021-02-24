@@ -25,6 +25,11 @@ const ProjectCol = styled(Col)`
   @media (min-width: 576px) {
     margin-bottom: 3rem;
   }
+
+  @media (min-width: 1800px) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 `;
 
 function RecentProjects() {

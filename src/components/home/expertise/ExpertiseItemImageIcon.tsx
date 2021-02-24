@@ -16,13 +16,17 @@ const StyledImg = styled(Img)`
   @media (min-width: 576px) {
     width: 11.38vw;
   }
-
   @media (min-width: 768px) {
     width: 8.38vw;
   }
-
   @media (min-width: 992px) {
     width: 6.38vw;
+  }
+  @media (min-width: 1800px) {
+    width: 6vw;
+  }
+  @media (min-width: 2800px) {
+    width: 4vw;
   }
 `;
 
