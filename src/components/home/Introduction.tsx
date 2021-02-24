@@ -1,13 +1,10 @@
 import React, { useState } from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import styled from 'styled-components';
 import Headshot from '../images/Headshot';
 import GetInTouchButton from '../common/GetInTouchButton';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
-import { NoWrap } from '../styled/components';
 
 const IntroductionRow = styled(Row)`
   padding-bottom: 70px;
@@ -42,22 +39,53 @@ const Name = styled.h1`
 `;
 
 const JobTitle = styled.h3`
-  font-size: 1.35rem;
+  font-size: 1.8rem;
   line-height: 2.5rem;
   font-weight: bold;
   margin-bottom: 0;
   margin-top: 1rem;
   @media (min-width: 576px) {
     margin-top: 0;
-    font-size: 1.5rem;
-  }
-  @media (min-width: 1600px) {
     font-size: 1.75rem;
   }
-  @media (min-width: 1800px) {
+  @media (min-width: 768px) {
+    margin-top: 0;
+    font-size: 2rem;
+  }
+  @media (min-width: 992px) {
+    margin-top: 0;
     font-size: 1.85rem;
   }
+  @media (min-width: 1200px) {
+    margin-top: 0;
+    font-size: 2rem;
+  }
+  @media (min-width: 1600px) {
+    font-size: 2.25rem;
+  }
+  @media (min-width: 1800px) {
+    font-size: 2.75rem;
+  }
 `;
+
+// Add this styling back in if I decide to add my location back in.
+// const JobTitle = styled.h3`
+//   font-size: 1.35rem;
+//   line-height: 2.5rem;
+//   font-weight: bold;
+//   margin-bottom: 0;
+//   margin-top: 1rem;
+//   @media (min-width: 576px) {
+//     margin-top: 0;
+//     font-size: 1.5rem;
+//   }
+//   @media (min-width: 1600px) {
+//     font-size: 1.75rem;
+//   }
+//   @media (min-width: 1800px) {
+//     font-size: 1.85rem;
+//   }
+// `;
 
 const FastFactsRow = styled(Row)`
   margin-top: 25px;
@@ -145,22 +173,22 @@ function Introduction() {
                   <Name className='text-center text-sm-start'>Jeff Terry</Name>
                   {/* Only show on larger screens */}
                   <JobTitle className='d-none d-sm-block'>
-                    <span className='me-3'>Software Engineer in</span>
-                    <NoWrap>
+                    <span className='me-3'>Software Engineer</span>
+                    {/* <NoWrap>
                       <FontAwesomeIcon icon={faMapMarkerAlt} className='me-2' />
                       <span>Oklahoma City</span>
-                    </NoWrap>
+                    </NoWrap> */}
                   </JobTitle>
                 </Col>
 
                 {/* Hide on larger screens */}
                 <Col xs={12} className='d-sm-none text-center'>
                   <JobTitle>
-                    <span className='me-2 me-sm-3'>Software Engineer in</span>
-                    <NoWrap>
+                    <span className='me-2 me-sm-3'>Software Engineer</span>
+                    {/* <NoWrap>
                       <FontAwesomeIcon icon={faMapMarkerAlt} className='me-2' />
                       <span>Oklahoma City</span>
-                    </NoWrap>
+                    </NoWrap> */}
                   </JobTitle>
                 </Col>
               </Row>
@@ -206,7 +234,7 @@ function Introduction() {
               onClick={() => setReadMore(!readMore)}
             >
               <BiographyParagraph>
-                Hi, I’m Jeff, a software engineer currently based in Oklahoma. My professional
+                Hi, I’m Jeff, a software engineer based in the United States. My professional
                 background is primarily in full-stack web development, but I’ve also done work in a
                 bunch of other areas—from robotics, to enterprise software, to data analytics. I’m
                 obsessed with building software that improves people’s lives, and I’m always excited
