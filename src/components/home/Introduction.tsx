@@ -156,7 +156,7 @@ function Introduction() {
                 {/* Hide on larger screens */}
                 <Col xs={12} className='d-sm-none text-center'>
                   <JobTitle>
-                    <span className='me-3'>Software Engineer in</span>
+                    <span className='me-2 me-sm-3'>Software Engineer in</span>
                     <NoWrap>
                       <FontAwesomeIcon icon={faMapMarkerAlt} className='me-2' />
                       <span>Oklahoma City</span>
