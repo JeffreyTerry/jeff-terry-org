@@ -9,7 +9,6 @@ import {
   faBootstrap,
   faCss3Alt,
   faDocker,
-  faGitAlt,
   faHtml5,
   faJsSquare,
   faNodeJs,
@@ -99,6 +98,13 @@ function Expertise() {
         }
       }
       typescript: file(relativePath: { eq: "expertise/TypeScript.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 200) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      gatsby: file(relativePath: { eq: "expertise/Gatsby.png" }) {
         childImageSharp {
           fluid(maxWidth: 200) {
             ...GatsbyImageSharpFluid_withWebp
@@ -203,11 +209,15 @@ function Expertise() {
             />
             <ExpertiseItem icon={faNodeJs} name='NodeJS' stars={3} iconColor='#689f66' />
             <ExpertiseItem
+              logoImage={logoImageData.gatsby.childImageSharp.fluid}
+              name='Gatsby'
+              stars={3}
+            />
+            <ExpertiseItem
               logoImage={logoImageData.bash.childImageSharp.fluid}
               name='Bash'
               stars={3}
             />
-            <ExpertiseItem icon={faGitAlt} name='Git' stars={3} iconColor='#f05035' />
 
             {/* 2 stars */}
             <ExpertiseItem
