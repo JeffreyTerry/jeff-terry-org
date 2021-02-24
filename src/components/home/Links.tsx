@@ -41,7 +41,7 @@ const LinkCol = styled(Col)`
 const LinkItem = styled.h3`
   color: ${(props) => props.theme.themePrimary};
   margin-bottom: 60px;
-  font-size: 2.25rem;
+  font-size: 2rem;
   font-weight: 500;
   display: inline;
 

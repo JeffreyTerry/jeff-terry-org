@@ -7,7 +7,7 @@ import MailTo from './MailTo';
 const StyledMailTo = styled(MailTo)`
   width: fit-content;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   border: 2px solid ${(props) => props.theme.primaryColor};
   padding: 0.25rem 4rem;
   display: inline-block;
@@ -21,6 +21,9 @@ const StyledMailTo = styled(MailTo)`
     background-color: ${(props) => props.theme.primaryColor};
   }
 
+  @media (min-width: 576px) {
+    font-size: 1.5rem;
+  }
   @media (min-width: 1600px) {
     font-size: 1.75rem;
   }
