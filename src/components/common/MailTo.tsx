@@ -1,25 +1,17 @@
 // Based on Jason Bellamy's npm package react-mailto: https://github.com/jasonbellamy/react-mailto
-import React, { AnchorHTMLAttributes, ReactChild, ReactChildren } from 'react';
+import React, { AnchorHTMLAttributes } from 'react';
 
-export const toSearchString = (searchParams = {}) => {
-  return Object.keys(searchParams)
-    .map((key) => `${key}=${encodeURIComponent(searchParams[key])}`)
-    .join('&');
-};
-
-export const createMailToLink = (emailUser: string, emailHost: string, headers?: object) => {
+export const createMailToLink = (emailUser: string, emailHost: string) => {
   let link = `mailto:${emailUser}@${emailHost}`;
-  if (headers) {
-    link += `?${toSearchString(headers)}`;
-  }
   return link;
 };
 
 interface MailToOptions {
+  /** The user portion of the email address. I.e. `jane` in jane@gmail.com */
   emailUser: string;
+  /** The host portion of the email address. I.e. `gmail.com` in jane@gmail.com */
   emailHost: string;
   children: React.ReactNode;
-  headers?: object;
   obfuscate?: boolean;
 }
 
@@ -27,13 +19,12 @@ function MailTo({
   emailUser,
   emailHost,
   children,
-  headers,
   obfuscate = true,
   ...rest
 }: MailToOptions & AnchorHTMLAttributes<HTMLAnchorElement>) {
-  function handleClick(event: React.MouseEvent) {
+  function handleClick(event: React.MouseEvent<HTMLAnchorElement>) {
     event.preventDefault();
-    window.location.href = createMailToLink(emailUser, emailHost, headers);
+    window.location.href = createMailToLink(emailUser, emailHost);
   }
 
   if (obfuscate) {
@@ -47,7 +38,7 @@ function MailTo({
 
   // Email not obfuscated
   return (
-    <a href={createMailToLink(emailUser, emailHost, headers)} {...rest}>
+    <a href={createMailToLink(emailUser, emailHost)} {...rest}>
       {children}
     </a>
   );
