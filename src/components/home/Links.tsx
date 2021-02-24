@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import styled from 'styled-components';
+import styled, { ThemeContext } from 'styled-components';
 import { SectionHeader } from '../styled/components';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
 import { withPrefix } from 'gatsby';
@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileAlt } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faGoodreads, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { NoWrap } from '../styled/components';
+import { ColorTheme } from '../../utils/constants';
 
 const LinksRow = styled(Row)`
   background-color: ${(props) => props.theme.bgColorSecondary};
@@ -66,6 +67,8 @@ const LinkItem = styled.h3`
 `;
 
 function Links() {
+  const theme: ColorTheme = useContext(ThemeContext);
+
   return (
     <LinksRow>
       <Col xs={{ span: 10, offset: 1 }} className='col-3k-8 offset-3k-2 col-4k-6 offset-4k-3'>
@@ -80,7 +83,10 @@ function Links() {
               <LinkCol xs={12} md={6} xl={3}>
                 {/* <Link to='/resume' style={{ color: '#007A39' }}> */}
                 {/* <Link to='/resume' style={{ color: '#148F46' }}> */}
-                <a href={withPrefix('./JeffTerryResume.pdf')} style={{ color: '#009D49' }}>
+                <a
+                  href={withPrefix('./JeffTerryResume.pdf')}
+                  style={{ color: theme.name === 'light' ? '#009D49' : '#3FBD79' }}
+                >
                   <LinkItem>
                     <NoWrap>
                       <FontAwesomeIcon icon={faFileAlt} className='me-3' />
@@ -90,7 +96,12 @@ function Links() {
                 </a>
               </LinkCol>
               <LinkCol xs={12} md={6} xl={3}>
-                <OutboundLink href='https://github.com/JeffreyTerry' style={{ color: '#171515' }}>
+                <OutboundLink
+                  href='https://github.com/JeffreyTerry'
+                  style={{
+                    color: theme.name === 'light' ? '#171515' : 'rgb(240, 246, 251)',
+                  }}
+                >
                   <LinkItem>
                     <NoWrap>
                       <FontAwesomeIcon icon={faGithub} className='me-3' />
@@ -115,7 +126,10 @@ function Links() {
               <LinkCol xs={12} md={6} xl={3}>
                 <OutboundLink
                   href='https://www.goodreads.com/user/show/43070334-jeffrey-terry'
-                  style={{ color: '#553b0e' }}
+                  style={{
+                    // color: theme.name === 'light' ? '#553b0e' : 'rgb(228, 175, 134)', // Not the official color, but a bit more orange
+                    color: theme.name === 'light' ? '#553b0e' : 'rgb(228, 223, 202)',
+                  }}
                 >
                   <LinkItem>
                     <NoWrap>

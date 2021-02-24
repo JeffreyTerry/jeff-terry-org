@@ -9,7 +9,7 @@ import Links from './home/Links';
 import Footer from './home/Footer';
 
 const HomeContainer = styled(Container)`
-  margin-top: 50px;
+  padding-top: 50px;
   color: ${(props) => props.theme.primaryColor};
   background-color: ${(props) => props.theme.bgColor};
 `;
