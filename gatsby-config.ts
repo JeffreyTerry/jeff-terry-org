@@ -11,6 +11,7 @@ export const plugins = [
     resolve: 'gatsby-plugin-google-analytics',
     options: {
       trackingId: 'UA-190157116-1',
+      head: true,
     },
   },
   'gatsby-plugin-sharp',

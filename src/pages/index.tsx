@@ -2,12 +2,16 @@ import React, { useMemo } from 'react';
 import Home from '../components/Home';
 import { ThemeProvider } from 'styled-components';
 import { Helmet } from 'react-helmet';
-import { useColorMode } from 'react-use-color-mode';
+// import { useColorMode } from 'react-use-color-mode';
 import { DARK_THEME, LIGHT_THEME } from '../utils/constants';
 import './index.css';
 
 function IndexPage() {
-  const colorMode = useColorMode();
+  let colorMode: 'light' | 'dark' = 'light';
+  if (typeof window !== 'undefined') {
+    const { useColorMode } = require('react-use-color-mode');
+    colorMode = useColorMode();
+  }
 
   const theme = useMemo(() => {
     return colorMode === 'light' ? LIGHT_THEME : DARK_THEME;
