@@ -50,4 +50,6 @@ export const plugins = [
       },
     },
   },
+  'gatsby-plugin-typescript',
+  'gatsby-plugin-typescript-checker',
 ];
