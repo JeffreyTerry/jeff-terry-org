@@ -14,11 +14,15 @@ const IntroductionRow = styled(Row)`
 `;
 
 const Name = styled.h1`
-  font-size: 3rem;
-  margin-bottom: 10px;
+  font-size: 3.25rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
 
   @media (min-width: 576px) {
     font-size: 4rem;
+    margin-top: 0;
+    text-align: left;
   }
   @media (min-width: 768px) {
     font-size: 5rem;
@@ -130,11 +134,11 @@ function Introduction() {
           <Row>
             <Col xs={12} lg={8} className='col-2k-7 col-3k-6 col-4k-5'>
               <Row className='align-items-center'>
-                <Col xs={4} md={3} lg={4} xl={3}>
+                <Col xs={{ span: 8, offset: 2 }} sm={{ span: 4, offset: 0 }} md={3} lg={4} xl={3}>
                   <Headshot />
                 </Col>
-                <Col xs={8} md={9} lg={8} xl={9}>
-                  <Name>Jeff Terry</Name>
+                <Col xs={12} sm={8} md={9} lg={8} xl={9}>
+                  <Name className='text-center text-sm-start'>Jeff Terry</Name>
                   {/* Only show on larger screens */}
                   <JobTitle className='d-none d-sm-block'>
                     <span className='me-3'>Software Engineer in</span>
@@ -158,13 +162,25 @@ function Introduction() {
               </Row>
 
               <FastFactsRow>
-                <FastFactCol xs={{ span: 11, offset: 1 }}>
+                <FastFactCol
+                  xs={12}
+                  sm={{ span: 11, offset: 1 }}
+                  className='text-center text-sm-start'
+                >
                   <FastFact>12+ years software engineering experience</FastFact>
                 </FastFactCol>
-                <FastFactCol xs={{ span: 11, offset: 1 }}>
+                <FastFactCol
+                  xs={12}
+                  sm={{ span: 11, offset: 1 }}
+                  className='text-center text-sm-start'
+                >
                   <FastFact>2+ years writing pedagogy experience</FastFact>
                 </FastFactCol>
-                <FastFactCol xs={{ span: 11, offset: 1 }}>
+                <FastFactCol
+                  xs={12}
+                  sm={{ span: 11, offset: 1 }}
+                  className='text-center text-sm-start'
+                >
                   <FastFact>
                     26+ years blinking experience
                     {/* TODO add a question icon with a tooltip */}
