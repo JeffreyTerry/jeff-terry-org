@@ -5,7 +5,7 @@ export const NoWrap = styled.span`
 `;
 
 export const SectionHeader = styled.h2`
-  font-size: 2.75rem;
+  font-size: 2.5rem;
   margin-top: 3rem;
   margin-bottom: 2.5rem;
   text-align: center;

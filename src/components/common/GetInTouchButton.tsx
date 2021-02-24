@@ -38,7 +38,7 @@ const StyledMailTo = styled(MailTo)`
 function GetInTouchButton({ icon = true }) {
   return (
     <StyledMailTo emailUser='jterry94' emailHost='gmail.com'>
-      {icon && <FontAwesomeIcon icon={faEnvelope} className='me-3' />}
+      {icon && <FontAwesomeIcon icon={faEnvelope} className='me-3 d-none d-sm-inline' />}
       Get in touch
     </StyledMailTo>
   );
