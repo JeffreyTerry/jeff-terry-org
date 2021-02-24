@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ButtonHTMLAttributes } from 'react';
 import styled from 'styled-components';
 
 const StyledButton = styled.button`
@@ -7,7 +7,7 @@ const StyledButton = styled.button`
   padding: unset;
 `;
 
-function Button(props: any) {
+function Button(props: ButtonHTMLAttributes<HTMLButtonElement>) {
   return <StyledButton {...props} />;
 }
 
