@@ -43,6 +43,16 @@ const ExpertiseItemIcon = styled(FontAwesomeIcon)`
       font-size: 7.25vw;
     }
   }
+  @media (min-width: 1800px) {
+    &&& {
+      font-size: 6.65vw;
+    }
+  }
+  @media (min-width: 2800px) {
+    &&& {
+      font-size: 4.6vw;
+    }
+  }
 `;
 
 const ExpertiseItemName = styled.h3`
@@ -51,6 +61,12 @@ const ExpertiseItemName = styled.h3`
 
   @media (min-width: 576px) {
     font-size: 2rem;
+  }
+  @media (min-width: 1800px) {
+    font-size: 2.5rem;
+  }
+  @media (min-width: 2800px) {
+    font-size: 3rem;
   }
 `;
 

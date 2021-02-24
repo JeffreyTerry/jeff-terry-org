@@ -48,6 +48,21 @@ const LinkItem = styled.h3`
   @media (min-width: 768px) {
     font-size: 2.75rem;
   }
+  @media (min-width: 1400px) {
+    font-size: 3rem;
+  }
+  @media (min-width: 1800px) {
+    font-size: 3.25rem;
+  }
+  @media (min-width: 2400px) {
+    font-size: 3.5rem;
+  }
+  @media (min-width: 2800px) {
+    font-size: 3.75rem;
+  }
+  @media (min-width: 3800px) {
+    font-size: 4.25rem;
+  }
 `;
 
 function Links() {
