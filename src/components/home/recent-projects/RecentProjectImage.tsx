@@ -76,7 +76,7 @@ function RecentProjectImage({
   projectUrl,
   projectName,
   ...props
-}: GatsbyImageFluidProps & RecentProjectProps): JSX.Element {
+}: GatsbyImageFluidProps & RecentProjectProps) {
   return (
     <ImgFigure>
       <StyledImg {...props} alt={`A screenshot of ${projectName}`} />

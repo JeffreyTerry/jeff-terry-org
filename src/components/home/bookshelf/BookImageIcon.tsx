@@ -14,10 +14,7 @@ const StyledImg = styled(Img)`
   margin-bottom: 0.38rem;
 `;
 
-function BookImageIcon({
-  name,
-  ...props
-}: GatsbyImageFluidProps & BookImageIconProps): JSX.Element {
+function BookImageIcon({ name, ...props }: GatsbyImageFluidProps & BookImageIconProps) {
   return <StyledImg {...props} alt={name} />;
 }
 

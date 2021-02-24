@@ -33,7 +33,7 @@ const StyledImg = styled(Img)`
 function ExpertiseItemImageIcon({
   name,
   ...props
-}: GatsbyImageFluidProps & ExpertiseItemImageIconProps): JSX.Element {
+}: GatsbyImageFluidProps & ExpertiseItemImageIconProps) {
   return <StyledImg {...props} alt={`The ${name} logo`} />;
 }
 

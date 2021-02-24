@@ -18,7 +18,7 @@ export const createMailToLink = (emailUser: string, emailHost: string, headers?:
 interface MailToOptions {
   emailUser: string;
   emailHost: string;
-  children: any;
+  children: React.ReactNode;
   headers?: object;
   obfuscate?: boolean;
 }
@@ -30,7 +30,7 @@ function MailTo({
   headers,
   obfuscate = true,
   ...rest
-}: MailToOptions & AnchorHTMLAttributes<HTMLAnchorElement>): JSX.Element {
+}: MailToOptions & AnchorHTMLAttributes<HTMLAnchorElement>) {
   function handleClick(event: React.MouseEvent) {
     event.preventDefault();
     window.location.href = createMailToLink(emailUser, emailHost, headers);
