@@ -1,3 +1,5 @@
+import { LIGHT_THEME, DARK_THEME } from './src/utils/constants';
+
 export const siteMetadata = {
   title: 'JeffTerry.org',
   description: "Jeff Terry's personal website.",
@@ -6,6 +8,13 @@ export const siteMetadata = {
 };
 
 export const plugins = [
+  {
+    resolve: `gatsby-styled-components-dark-mode`,
+    options: {
+      light: LIGHT_THEME,
+      dark: DARK_THEME,
+    },
+  },
   'gatsby-plugin-styled-components',
   {
     resolve: 'gatsby-plugin-google-analytics',
