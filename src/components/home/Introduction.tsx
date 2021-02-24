@@ -39,25 +39,26 @@ const Name = styled.h1`
 `;
 
 const JobTitle = styled.h3`
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   line-height: 2.5rem;
   font-weight: bold;
   margin-bottom: 0;
-  margin-top: 1rem;
+  @media (min-width: 350px) {
+    font-size: 1.6rem;
+  }
+  @media (min-width: 400px) {
+    font-size: 1.7rem;
+  }
   @media (min-width: 576px) {
-    margin-top: 0;
     font-size: 1.75rem;
   }
   @media (min-width: 768px) {
-    margin-top: 0;
     font-size: 2rem;
   }
   @media (min-width: 992px) {
-    margin-top: 0;
     font-size: 1.85rem;
   }
   @media (min-width: 1200px) {
-    margin-top: 0;
     font-size: 2rem;
   }
   @media (min-width: 1600px) {
