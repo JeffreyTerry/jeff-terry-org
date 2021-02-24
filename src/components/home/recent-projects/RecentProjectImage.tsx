@@ -22,7 +22,7 @@ const ImgFigCaption = styled.figcaption`
   top: 0;
   width: 100%;
   height: 100%;
-  color: ${(props) => props.theme.bgColor};
+  color: ${(props) => props.theme.lightBgColor};
   z-index: 1;
   text-align: center;
   transition: all 0.3s ease-out;
@@ -51,13 +51,13 @@ const ImgFigCaption = styled.figcaption`
 
 const CaptionProjectName = styled.h3`
   font-size: 2.4rem;
-  color: ${(props) => props.theme.bgColor};
+  color: ${(props) => props.theme.lightBgColor};
   cursor: default;
 `;
 
 const CaptionViewProjectButton = styled(OutboundLink)`
-  color: ${(props) => props.theme.bgColor};
-  border: 2px solid ${(props) => props.theme.bgColor};
+  color: ${(props) => props.theme.lightBgColor};
+  border: 2px solid ${(props) => props.theme.lightBgColor};
   border-radius: 2rem;
   font-size: 1.3rem;
   display: inline-block;
@@ -67,8 +67,8 @@ const CaptionViewProjectButton = styled(OutboundLink)`
   text-decoration: none;
   :hover {
     text-decoration: inherit;
-    color: ${(props) => props.theme.primaryColor};
-    background-color: ${(props) => props.theme.bgColor};
+    color: ${(props) => props.theme.lightPrimaryColor};
+    background-color: ${(props) => props.theme.lightBgColor};
   }
 `;
 
