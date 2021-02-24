@@ -42,13 +42,14 @@ const Name = styled.h1`
 `;
 
 const JobTitle = styled.h3`
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   line-height: 2.5rem;
   font-weight: bold;
   margin-bottom: 0;
   margin-top: 1rem;
   @media (min-width: 576px) {
     margin-top: 0;
+    font-size: 1.5rem;
   }
   @media (min-width: 1600px) {
     font-size: 1.75rem;
@@ -67,8 +68,11 @@ const FastFactCol = styled(Col)`
 `;
 
 const FastFact = styled.h3`
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 500;
+  @media (min-width: 576px) {
+    font-size: 1.75rem;
+  }
   @media (min-width: 1600px) {
     font-size: 1.9rem;
   }

@@ -10,7 +10,11 @@ const FooterRow = styled(Row)`
   margin-top: 3.5rem;
   margin-bottom: 3.5rem;
   text-align: center;
-  font-size: 1.75rem;
+  font-size: 1.1rem;
+
+  @media (min-width: 576px) {
+    font-size: 1.75rem;
+  }
 `;
 
 const GetInTouchButtonRow = styled(Col)`
