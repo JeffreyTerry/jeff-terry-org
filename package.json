@@ -13,8 +13,8 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gatsby build && gh-pages -d public",
-    "test": "jest"
+    "test": "jest",
+    "deploy-after-testing": "gatsby build && gh-pages -d public"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
