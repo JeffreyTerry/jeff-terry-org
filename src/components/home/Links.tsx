@@ -112,7 +112,7 @@ function Links() {
               </LinkCol>
               <LinkCol xs={12} md={6} xl={3}>
                 <OutboundLink
-                  href='https://www.linkedin.com/in/jeffrey-terry-25331b22/'
+                  href='https://www.linkedin.com/in/theonlyjeff2/'
                   style={{ color: '#0078b7' }}
                 >
                   <LinkItem>
