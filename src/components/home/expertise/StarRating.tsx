@@ -20,13 +20,13 @@ function StarRating({ stars }: { stars: number }) {
   }, [stars]);
 
   return (
-    <StarRatingContainer>
+    <StarRatingContainer aria-label={`${stars} out of 5 stars`}>
       {starsArray.map((solid, i) => (
         <Star key={`star-${i}`}>
           {solid ? (
-            <FontAwesomeIcon icon={faStarSolid} />
+            <FontAwesomeIcon icon={faStarSolid} data-testid='star-rating-solid-star' />
           ) : (
-            <FontAwesomeIcon icon={faStarRegular} />
+            <FontAwesomeIcon icon={faStarRegular} data-testid='star-rating-regular-star' />
           )}
         </Star>
       ))}
