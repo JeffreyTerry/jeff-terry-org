@@ -192,7 +192,7 @@ function Introduction() {
                     <span className='me-2 me-sm-3'>Software Engineer in</span>
                     <NoWrap>
                       <FontAwesomeIcon icon={faMapMarkerAlt} className='me-2' />
-                      <span>Oklahoma City</span>
+                      <span>Durham, NC</span>
                     </NoWrap>
                   </JobTitle>
                 </Col>
