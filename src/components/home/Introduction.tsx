@@ -246,7 +246,7 @@ function Introduction() {
                 to learn whatever languages and technologies I need to make that happen!
               </BiographyParagraph>
               <BiographyParagraph>
-                Right now, I’m working part-time as the lead software engineer for a small education
+                Right now, I’m working as the lead software engineer for a small education
                 non-profit called AskMe Tutoring. At AskMe, I’m working together with a junior
                 engineer to build a web application that helps students find and register for online
                 group classes. Once we finish the full build-out of AskMe’s platform this summer,
