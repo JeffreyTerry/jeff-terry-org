@@ -246,11 +246,10 @@ function Introduction() {
                 to learn whatever languages and technologies I need to make that happen!
               </BiographyParagraph>
               <BiographyParagraph>
-                Right now, I’m working as the lead software engineer for a small education
-                non-profit called AskMe Tutoring. At AskMe, I’m working together with a junior
-                engineer to build a web application that helps students find and register for online
-                group classes. Once we finish the full build-out of AskMe’s platform this summer,
-                I’m planning to start my next full-time adventure in July.
+                I'm currently working as a full-stack engineer for Concertiv, a company that
+                provides data analytics, group purchasing, and managed services to professional
+                services firms. At Concertiv, I'm responsible for maintaining their current web
+                platform and building out their next generation platform.
               </BiographyParagraph>
               {readMore && (
                 <>
@@ -263,12 +262,6 @@ function Introduction() {
                     awesome professors. Last year, my graduate work culminated in{' '}
                     <OutboundLink href='https://presly.org'>Presly</OutboundLink>, an online
                     presentation coach that teaches students how to give great presentations.
-                  </BiographyParagraph>
-                  <BiographyParagraph>
-                    For my next adventure, I’m looking to work for a company that’s as obsessed with
-                    improving people’s lives as I am. I’m particularly interested in working with
-                    teammates who enjoy using cutting-edge technologies to write clean, efficient,
-                    and reliable code. Scroll down to see a few of my recent projects!
                   </BiographyParagraph>
                 </>
               )}
