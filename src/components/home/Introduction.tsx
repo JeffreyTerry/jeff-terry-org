@@ -246,20 +246,20 @@ function Introduction() {
                 to learn whatever languages and technologies I need to make that happen!
               </BiographyParagraph>
               <BiographyParagraph>
-                I'm currently working as a full-stack engineer for Concertiv, a company that
-                provides data analytics, group purchasing, and managed services to professional
-                services firms. At Concertiv, I'm responsible for maintaining their current web
-                platform and building out their next generation platform.
+                I'm currently working as a full-stack engineer for Concertiv, where we're building a
+                B2B product procurement platform that integrates workflow, contract management, and
+                spend analysis to help companies buy the best products at the best prices.
               </BiographyParagraph>
               {readMore && (
                 <>
                   <BiographyParagraph>
-                    Previously, I’ve worked as a software engineering intern for Microsoft and
-                    National Instruments, and more recently, I’ve worked as a writing tutor and a
-                    rhetoric instructor at the university level. As part of my graduate studies at
-                    The Ohio State University, I not only got to read great works of literature, but
-                    I also got to study digital media and software usability with a couple of
-                    awesome professors. Last year, my graduate work culminated in{' '}
+                    Previously, I’ve worked as a software engineering intern for Microsoft, National
+                    Instruments, and a few other companies, in addition to starting my own company
+                    back in college. More recently, I’ve worked as a writing tutor and a rhetoric
+                    instructor at the university level. As part of my graduate studies at The Ohio
+                    State University, I not only got to read great works of literature, but I also
+                    got to study digital media and software usability with a couple of awesome
+                    professors. Last year, my graduate work culminated in{' '}
                     <OutboundLink href='https://presly.org'>Presly</OutboundLink>, an online
                     presentation coach that teaches students how to give great presentations.
                   </BiographyParagraph>
