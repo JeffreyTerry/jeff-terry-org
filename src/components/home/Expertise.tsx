@@ -174,14 +174,19 @@ function Expertise() {
             <ExpertiseItem icon={faHtml5} name='HTML' stars={5} iconColor='#254deb' />
             <ExpertiseItem icon={faCss3Alt} name='CSS' stars={5} iconColor='#e44d29' />
             <ExpertiseItem icon={faBootstrap} name='Bootstrap' stars={5} iconColor='#7853b0' />
-
-            {/* 4 stars */}
             <ExpertiseItem
               logoImage={logoImageData.django.childImageSharp.fluid}
               name='Django'
+              stars={5}
+            />
+            <ExpertiseItem icon={faReact} name='ReactJS' stars={5} iconColor='#61dbfa' />
+
+            {/* 4 stars */}
+            <ExpertiseItem
+              logoImage={logoImageData.typescript.childImageSharp.fluid}
+              name='TypeScript'
               stars={4}
             />
-            <ExpertiseItem icon={faReact} name='ReactJS' stars={4} iconColor='#61dbfa' />
             <ExpertiseItem
               logoImage={logoImageData.redux.childImageSharp.fluid}
               name='Redux'
@@ -189,24 +194,19 @@ function Expertise() {
             />
 
             {/* 3 stars */}
-            <ExpertiseItem icon={faDocker} name='Docker' stars={3} iconColor='#2396ea' />
             <ExpertiseItem icon={faAws} name='AWS' stars={3} iconColor='#ec9137' />
             <ExpertiseItem
               logoImage={logoImageData.postgresql.childImageSharp.fluid}
               name='PostgreSQL'
               stars={3}
             />
+            <ExpertiseItem icon={faDocker} name='Docker' stars={3} iconColor='#2396ea' />
             <ExpertiseItem
               logoImage={logoImageData.cplusplus.childImageSharp.fluid}
               name='C++'
               stars={3}
             />
             <ExpertiseItem logoImage={logoImageData.c.childImageSharp.fluid} name='C' stars={3} />
-            <ExpertiseItem
-              logoImage={logoImageData.typescript.childImageSharp.fluid}
-              name='TypeScript'
-              stars={3}
-            />
             <ExpertiseItem icon={faNodeJs} name='NodeJS' stars={3} iconColor='#689f66' />
             <ExpertiseItem
               logoImage={logoImageData.gatsby.childImageSharp.fluid}
